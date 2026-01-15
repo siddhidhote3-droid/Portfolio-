@@ -12,7 +12,7 @@ body {
 
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 90px 20px;
 }
 
 .hero h1 {
@@ -25,19 +25,20 @@ body {
 }
 
 .buttons a {
-  margin: 10px;
-  padding: 10px 20px;
+  margin: 12px;
+  padding: 12px 22px;
   background: #2563eb;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   display: inline-block;
 }
 
 .section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
+  animation: fadeUp 0.8s ease both;
 }
 
 .section h2 {
@@ -47,32 +48,75 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+  gap: 18px;
 }
 
 .card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 25px;
+  border-radius: 16px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.25s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-6px);
 }
 
-.cert-list li {
-  margin-bottom: 10px;
+/* GLASSMORPHISM */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
 }
 
-/* Popup */
+.card i {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #60a5fa;
+  display: block;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #2563eb;
+}
+
+.timeline-item {
+  padding-left: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item span {
+  position: absolute;
+  left: -8px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background: #2563eb;
+  border-radius: 50%;
+}
+
+/* POPUP */
 .popup {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.75);
   justify-content: center;
   align-items: center;
 }
@@ -80,13 +124,25 @@ body {
 .popup-content {
   background: #1e293b;
   padding: 30px;
-  border-radius: 12px;
-  max-width: 400px;
+  border-radius: 16px;
+  max-width: 420px;
   text-align: center;
 }
 
 .close {
   float: right;
+  font-size: 22px;
   cursor: pointer;
-  font-size: 20px;
 }
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  }
