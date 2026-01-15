@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Siddhi Dhote | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+  <h1>Siddhi Dhote</h1>
+  <p>Class 9 Student | AI & Robotics Enthusiast 🇮🇳</p>
+  <div class="buttons">
+    <a href="https://github.com/siddhidhote3-droid" target="_blank">GitHub</a>
+    <a href="#projects">Projects</a>
+  </div>
+</header>
+
+<section class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a Class 9 student from India with a strong interest in
+    Artificial Intelligence, Robotics, and Technology.
+    My goal is to become a Future AI & Robotics Engineer.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Python</div>
+    <div class="card">HTML & CSS</div>
+    <div class="card">AI Basics</div>
+    <div class="card">Face Recognition</div>
+    <div class="card">Quantum Theory (Student Level)</div>
+    <div class="card">Fractals</div>
+    <div class="card">Robotics Ninja</div>
+    <div class="card">Line Follower Robot</div>
+    <div class="card">Blind Stick Project</div>
+    <div class="card">GitHub · Replit · Kaggle · Coursera · LinkedIn</div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card project" onclick="openPopup('AI GPT-like Assistant')">AI GPT-like Assistant</div>
+    <div class="card project" onclick="openPopup('Python Calculator')">Python Calculator</div>
+    <div class="card project" onclick="openPopup('Face Recognition System')">Face Recognition</div>
+    <div class="card project" onclick="openPopup('Line Follower Robot')">Line Follower Robot</div>
+    <div class="card project" onclick="openPopup('Blind Stick Project')">Blind Stick</div>
+    <div class="card project" onclick="openPopup('Quantum Theory Project')">Quantum Theory</div>
+    <div class="card project" onclick="openPopup('Fractal Project')">Fractal Project</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Certificates</h2>
+  <ul class="cert-list">
+    <li>🥇 VVM 2025–26 Level II – 1st Rank (School Topper)</li>
+    <li>📜 VVM 2025–26 Level II – National Participation</li>
+  </ul>
+</section>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">×</span>
+    <h3 id="popupTitle"></h3>
+    <p>This project showcases my hands-on learning and interest in AI & Robotics.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
