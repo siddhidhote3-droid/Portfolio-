@@ -4,75 +4,130 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Siddhi Dhote | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="hero">
   <h1>Siddhi Dhote</h1>
   <p>Class 9 Student | AI & Robotics Enthusiast 🇮🇳</p>
+
   <div class="buttons">
-    <a href="https://github.com/siddhidhote3-droid" target="_blank">GitHub</a>
+    <a href="https://github.com/siddhidhote3-droid" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
     <a href="#projects">Projects</a>
   </div>
 </header>
 
+<!-- ABOUT -->
 <section class="section">
   <h2>About Me</h2>
   <p>
-    I am a Class 9 student from India with a strong interest in
-    Artificial Intelligence, Robotics, and Technology.
-    My goal is to become a Future AI & Robotics Engineer.
+    I am a Class 9 student from India passionate about Artificial Intelligence,
+    Robotics, and Technology. I love building real-world projects and exploring
+    advanced concepts. My goal is to become a Future AI & Robotics Engineer.
   </p>
 </section>
 
+<!-- SKILLS -->
 <section class="section">
-  <h2>Skills</h2>
+  <h2>Skills & Tools</h2>
   <div class="grid">
-    <div class="card">Python</div>
-    <div class="card">HTML & CSS</div>
-    <div class="card">AI Basics</div>
-    <div class="card">Face Recognition</div>
-    <div class="card">Quantum Theory (Student Level)</div>
-    <div class="card">Fractals</div>
-    <div class="card">Robotics Ninja</div>
-    <div class="card">Line Follower Robot</div>
-    <div class="card">Blind Stick Project</div>
-    <div class="card">GitHub · Replit · Kaggle · Coursera · LinkedIn</div>
+    <div class="card glass"><i class="fa-brands fa-python"></i> Python</div>
+    <div class="card glass"><i class="fa-solid fa-code"></i> HTML & CSS</div>
+    <div class="card glass"><i class="fa-solid fa-brain"></i> AI Basics</div>
+    <div class="card glass"><i class="fa-solid fa-robot"></i> Robotics</div>
+    <div class="card glass"><i class="fa-solid fa-eye"></i> Face Recognition</div>
+    <div class="card glass"><i class="fa-solid fa-atom"></i> Quantum Theory</div>
+    <div class="card glass"><i class="fa-solid fa-shapes"></i> Fractals</div>
+    <div class="card glass"><i class="fa-brands fa-github"></i> GitHub</div>
+    <div class="card glass"><i class="fa-solid fa-laptop-code"></i> Replit</div>
+    <div class="card glass"><i class="fa-solid fa-chart-line"></i> Kaggle</div>
+    <div class="card glass"><i class="fa-solid fa-graduation-cap"></i> Coursera</div>
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section class="section" id="projects">
   <h2>Projects</h2>
   <div class="grid">
-    <div class="card project" onclick="openPopup('AI GPT-like Assistant')">AI GPT-like Assistant</div>
-    <div class="card project" onclick="openPopup('Python Calculator')">Python Calculator</div>
-    <div class="card project" onclick="openPopup('Face Recognition System')">Face Recognition</div>
-    <div class="card project" onclick="openPopup('Line Follower Robot')">Line Follower Robot</div>
-    <div class="card project" onclick="openPopup('Blind Stick Project')">Blind Stick</div>
-    <div class="card project" onclick="openPopup('Quantum Theory Project')">Quantum Theory</div>
-    <div class="card project" onclick="openPopup('Fractal Project')">Fractal Project</div>
+    <div class="card glass project" onclick="openPopup('AI GPT-like Assistant')">
+      <i class="fa-solid fa-comments"></i> AI GPT-like Assistant
+    </div>
+
+    <div class="card glass project" onclick="openPopup('Python Calculator')">
+      <i class="fa-solid fa-calculator"></i> Python Calculator
+    </div>
+
+    <div class="card glass project" onclick="openPopup('Face Recognition System')">
+      <i class="fa-solid fa-user-check"></i> Face Recognition
+    </div>
+
+    <div class="card glass project" onclick="openPopup('Line Follower Robot')">
+      <i class="fa-solid fa-road"></i> Line Follower Robot
+    </div>
+
+    <div class="card glass project" onclick="openPopup('Blind Stick Project')">
+      <i class="fa-solid fa-person-walking-with-cane"></i> Blind Stick
+    </div>
+
+    <div class="card glass project" onclick="openPopup('Quantum & Fractal Projects')">
+      <i class="fa-solid fa-atom"></i> Quantum & Fractals
+    </div>
   </div>
 </section>
 
+<!-- TIMELINE -->
 <section class="section">
-  <h2>Certificates</h2>
-  <ul class="cert-list">
-    <li>🥇 VVM 2025–26 Level II – 1st Rank (School Topper)</li>
-    <li>📜 VVM 2025–26 Level II – National Participation</li>
-  </ul>
+  <h2>My Learning Journey</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span></span>
+      <h3>Started Coding</h3>
+      <p>HTML, CSS and basic programming logic.</p>
+    </div>
+
+    <div class="timeline-item">
+      <span></span>
+      <h3>Python & AI Basics</h3>
+      <p>Calculator, AI basics, logic-based projects.</p>
+    </div>
+
+    <div class="timeline-item">
+      <span></span>
+      <h3>Robotics & Hardware</h3>
+      <p>Line follower robot, blind stick, hands-on STEM.</p>
+    </div>
+
+    <div class="timeline-item">
+      <span></span>
+      <h3>Advanced Exploration</h3>
+      <p>Face recognition, quantum theory, fractals.</p>
+    </div>
+  </div>
 </section>
 
-<!-- POPUP -->
+<!-- PROJECT POPUP -->
 <div id="popup" class="popup">
   <div class="popup-content">
     <span class="close" onclick="closePopup()">×</span>
     <h3 id="popupTitle"></h3>
-    <p>This project showcases my hands-on learning and interest in AI & Robotics.</p>
+    <p>
+      This project represents my hands-on learning, problem-solving skills,
+      and interest in AI & Robotics.
+    </p>
   </div>
 </div>
 
 <script src="script.js"></script>
 </body>
-  </html>
+    </html>
